@@ -29,14 +29,14 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counts = 100;
+  int _count = 100;
 
   void Count() {
     setState(() {
-      if (_counts > 0) {
-        _counts = _counts - 1;
+      if (_count > 0) {
+        _count = _count - 1;
       } else {
-        _counts += 100;
+        _count += 100;
       }
     });
   }
@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text('استغفر الله العظيم',
                 style: TextStyle(fontSize: 35, color: Colors.brown)),
             Text(
-              '$_counts',
+              '$_count',
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
